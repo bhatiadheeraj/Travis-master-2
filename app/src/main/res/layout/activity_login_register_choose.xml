@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRAVIS"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:id="@+id/tv_regChoose_travis"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Traffic Realtime Assistant Via Internet Service"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:id="@+id/tv_regChoose_travis_full_form"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tv_regChoose_travis"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_app_main"
+        android:layout_below="@+id/tv_regChoose_travis_full_form"
+        android:layout_marginTop="50dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ll_regChoose_buttons">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:id="@+id/bt_regChoose_signUp"
+            android:background="@drawable/custom_button_white" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:id="@+id/bt_regChoose_signIn"
+            android:background="@drawable/custom_button_white"
+            android:layout_marginTop="5dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Terms and Conditions"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp"
+                android:id="@+id/tv_regChoose_termsConditions"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Forgot Password?"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp"
+                android:id="@+id/tv_regChoose_forgotPass"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

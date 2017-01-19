@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pedestrian Safety Mode"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_pedestrian_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activate pedestrian mode while walking on the streets. This will alert you about nearby road intersections, dangers and other hazards related to pedestrian safety."
+        android:textSize="16dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tv_pedestrian_content"/>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_pedestrian"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_geoFence_startService"
+        android:text=""
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_button_gray"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/colorWhite"/>
+</LinearLayout>
